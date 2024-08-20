@@ -1,0 +1,44 @@
+/* Add application styles & imports to this file! */
+* {
+  box-sizing: border-box;
+}
+
+.acc {
+  width: 200px;
+  border: 1px solid;
+  
+  .row {
+    border-top: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .col {
+      
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:nth-child(1){
+        background: orange;
+      }
+            &:nth-child(2){
+        background: blue;
+      }
+            &:nth-child(3){
+        background: green;
+      }
+            &:nth-child(4){
+        background: red;
+        flex: 0.3;
+      }
+      
+    }
+    
+    &:first-child {
+      border-top: none;
+    }
+  }
+  
+}
